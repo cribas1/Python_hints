@@ -1,0 +1,13 @@
+Google API
+
+https://console.developers.google.com/apis/credentials?showWizardSurvey=true&project=learning-python-306013&supportedpurview=project
+Client ID: 122456677400-idbt1jrope2qeq0eqccqlagi1m79affr.apps.googleusercontent.com
+Client secret: hYPEULmFRaQCc8P_WBxiz8b1
+
+Pandas Tutorial:
+
+https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html
+
+SQL TO PANDA:
+
+https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html

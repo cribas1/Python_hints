@@ -1,0 +1,64 @@
+INFO | 2021-03-01T09:52:44.236+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | Task 6037cdf91eeb6a6a879df302/3.3 was started; MDC: {accountID=7c36fd85-c081-422f-8a70-1bc8951b6655, remoteEngineId=960053a1-3999-4ae3-b147-7b18bf65d5ba, flowExecutionId=78f61b73-d9f8-4419-9378-62a247627bf6, flowVersion=3.3, flowID=6037cdf91eeb6a6a879df302, userId=luisfernandez, workspaceId=5f5f67b5b52fa334533ce77a, executionDestination=REMOTE_ENGINE}; containerVersion: 2.9.5_tipaas-base/release%2FR2021-01-01_189_tipaas-remote-engine-build/master
+
+INFO | 2021-03-01T09:52:44.320+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | 
+  "remote_engine_id": "960053a1-3999-4ae3-b147-7b18bf65d5ba",
+  "remote_engine_name": "Remote Engine DEV 01",
+  "task_execution_id": "78f61b73-d9f8-4419-9378-62a247627bf6",
+  "workspace_name": "BIRD",
+  "workspace_id": "5f5f67b5b52fa334533ce77a",
+  "environment_name": "DEV",
+  "environment_id": "5f5f67b5b52fa334533ce779",
+  "environment_version": "1.3",
+  "trigger_timestamp": 1614592228056,
+  "artifact_name": "error_test",
+  "artifact_version": "0.1.2.20210103094844",
+  "task_id": "6037cdf91eeb6a6a879df302",
+  "task_name": "error_test",
+  "task_version": "3.3",
+  "run_type": "MANUAL",
+  "compatibility_version": "7.3.1",
+  "count_of_attempts": 0
+
+INFO | 2021-03-01T09:52:59.693+0000 | org.talend.ipaas.rt.flow-controller:2.9.5 | Try to do action 'deployJob' 2 times if error occurs during execution.
+INFO | 2021-03-01T09:53:15.967+0000 | tipaas-jobserver-client:2.9.5 | Send job df91eeb6a6a879df30233
+INFO | 2021-03-01T09:53:16.307+0000 | org.talend.remote.jobserver.client:7.3.1.20201113_1000_patch | System property "lockDeployOnSameAddress"=true
+INFO | 2021-03-01T09:53:37.973+0000 | tipaas-jobserver-client:2.9.5 | Deploy job df91eeb6a6a879df30233
+INFO | 2021-03-01T09:53:41.342+0000 | tipaas-jobserver-client:2.9.5 | Job df91eeb6a6a879df30233 deploy status is ENDED
+INFO | 2021-03-01T09:53:41.351+0000 | org.talend.ipaas.rt.tipaas-rt-common:2.9.5 | Action 'deployJob' executed with success.
+ERROR | 2021-03-01T09:53:42.334+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | 
+  "message": "Task 6037cdf91eeb6a6a879df302/3.3 failed unexpectedly. Step 78f61b73-d9f8-4419-9378-62a247627bf6 failed with code 1 and error Job stopped with errors or unable to run. (check the task execution logs for the error details)",
+  "event_type": "JOB_STATUS",
+  "job_phase": "EXECUTION_FAILED",
+  "timestamp": 1614592422333,
+  "context": {
+    "remote_engine_id": "960053a1-3999-4ae3-b147-7b18bf65d5ba",
+    "remote_engine_name": "Remote Engine DEV 01",
+    "task_execution_id": "78f61b73-d9f8-4419-9378-62a247627bf6",
+    "workspace_name": "BIRD",
+    "workspace_id": "5f5f67b5b52fa334533ce77a",
+    "environment_name": "DEV",
+    "environment_id": "5f5f67b5b52fa334533ce779",
+    "environment_version": "1.3",
+    "trigger_timestamp": 1614592228056,
+    "artifact_name": "error_test",
+    "artifact_version": "0.1.2.20210103094844",
+    "task_id": "6037cdf91eeb6a6a879df302",
+    "task_name": "error_test",
+    "task_version": "3.3",
+    "run_type": "MANUAL",
+    "compatibility_version": "7.3.1",
+    "count_of_attempts": 0
+  }
+
+ERROR | 2021-03-01T09:53:42.342+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | Task 6037cdf91eeb6a6a879df302/3.3 failed unexpectedly.
+org.talend.ipaas.rt.flow.controller.impl.FlowExecutionException: Step 78f61b73-d9f8-4419-9378-62a247627bf6 failed with code 1 and error Job stopped with errors or unable to run. (check the task execution logs for the error details)
+	at org.talend.ipaas.rt.flow.controller.impl.JobControllerImpl.doRun(JobControllerImpl.java:167) ~[?:?]
+	at org.talend.ipaas.rt.flow.controller.impl.AbstractControllerImpl.lambda$run$0(AbstractControllerImpl.java:106) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_281]
+Caused by: java.lang.Exception: Job stopped with errors or unable to run. (check the task execution logs for the error details)
+	... 3 more
+WARN | 2021-03-01T09:53:42.354+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | 6037cdf91eeb6a6a879df302/3.3: Step 78f61b73-d9f8-4419-9378-62a247627bf6 failed with code 1 and error Job stopped with errors or unable to run. (check the task execution logs for the error details)
+INFO | 2021-03-01T09:53:42.360+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | Undeploy feature 6037cdf91eeb6a6a879df302/3.3.
+INFO | 2021-03-01T09:53:42.367+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | Undeploy feature 6037cdf91eeb6a6a879df302/3.3 6037cdf91eeb6a6a879df302_spec2/3.3.0
+INFO | 2021-03-01T09:53:42.379+0000 | org.apache.karaf.features.core:4.2.8 | Removing features: 6037cdf91eeb6a6a879df302_spec2/[3.3.0,3.3.0]
+INFO | 2021-03-01T09:53:45.932+0000 | org.talend.ipaas.rt.deployment-agent:2.9.5 | Task 6037cdf91eeb6a6a879df302/3.3 execution 78f61b73-d9f8-4419-9378-62a247627bf6 has been completed with status EXECUTION_FAILED.
