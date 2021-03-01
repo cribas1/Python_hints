@@ -4,6 +4,10 @@ https://console.developers.google.com/apis/credentials?showWizardSurvey=true&pro
 Client ID: 122456677400-idbt1jrope2qeq0eqccqlagi1m79affr.apps.googleusercontent.com
 Client secret: hYPEULmFRaQCc8P_WBxiz8b1
 
+Read and write to google sheet
+
+https://www.analyticsvidhya.com/blog/2020/07/read-and-update-google-spreadsheets-with-python/
+
 Pandas Tutorial:
 
 https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html
